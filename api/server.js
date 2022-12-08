@@ -32,6 +32,6 @@ app.use("/api/users", userRoute);
 app.use("/api/auth", authRoute);
 app.use("/api/data", dataRoute);
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5001, () => {
   console.log("working")
 })
